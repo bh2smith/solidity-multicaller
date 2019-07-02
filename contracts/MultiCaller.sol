@@ -3,13 +3,24 @@ pragma solidity ^0.5.0;
 
 contract MultiCaller {
 
-    function execute(address contractAddress, uint numCalls, string memory functionName) public returns (bool) {
-        bool success = true;
-        bool next;
-        for (uint i=0; i < numCalls; i++) {
-            (next, ) = contractAddress.call(abi.encodeWithSignature(functionName));
-            success = success && next;
+    function executeWithFunctionName(
+        address contractAddress,
+        uint numCalls,
+        string memory functionName
+    ) public returns (bool) {
+        executeWithCalldata(
+            contractAddress, numCalls, abi.encodeWithSignature(functionName)
+        );
+    }
+
+    function executeWithCalldata(
+        address contractAddress,
+        uint numCalls,
+        bytes memory _calldata
+    ) public returns (bool) {
+        for (uint i = 0; i < numCalls; i++) {
+            (bool success, ) = contractAddress.call(_calldata);
+            require(success, "One or more of the transactions failed!");
         }
-        require(success, "One or more of the transactions failed!");
     }
 }
