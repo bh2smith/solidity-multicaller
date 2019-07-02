@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bh2smith/solidity-multi-transaction.svg?branch=master)](https://travis-ci.org/bh2smith/solidity-multi-transaction)
+
 # Solidity Multi-Transaction
 Solidity testing utility for calling the same function several times in a single transaction. Such a tool can be used during unit testing to achieve _conditional coverage_ in situations that might require several transactions to be executed simultaneously.
 
