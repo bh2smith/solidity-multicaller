@@ -3,7 +3,7 @@ const DummyContract = artifacts.require("DummyContract")
 
 const truffleAssert = require("truffle-assertions")
 
-contract("MultiCaller", async (accounts) => {
+contract("MultiCaller", async () => {
 
 
   describe("executeWithFunctionName()", () => {

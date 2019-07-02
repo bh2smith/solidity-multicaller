@@ -1,0 +1,37 @@
+{
+  "name": "solidity-multicall",
+  "version": "1.0.0",
+  "description": "Solidity testing utility for calling the same function several times in a single transaction. ",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bh2smith/solidity-multi-transaction.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "testing",
+    "unit",
+    "test",
+    "tool"
+  ],
+  "author": "Ben Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bh2smith/solidity-multi-transaction/issues"
+  },
+  "homepage": "https://github.com/bh2smith/solidity-multi-transaction#readme",
+  "dependencies": {
+    "truffle": "^5.0.25"
+  },
+  "devDependencies": {
+    "truffle-assertions": "^0.9.1"
+  }
+}
