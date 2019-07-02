@@ -5,3 +5,6 @@ before_install:
   - npm install -g ganache-cli
 before_script:
   - ganache-cli > /dev/null &
+script:
+  - npm run test
+  - npm run lint
