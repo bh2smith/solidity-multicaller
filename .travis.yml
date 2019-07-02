@@ -4,4 +4,4 @@ node_js:
 before_install:
   - npm install -g ganache-cli
 before_script:
-  - ganache-cli
+  - ganache-cli > /dev/null &
