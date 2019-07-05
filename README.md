@@ -4,6 +4,14 @@
 # Solidity Multi-Transaction
 Solidity testing utility for calling the same function several times in a single transaction. Such a tool can be used during unit testing to achieve _conditional coverage_ in situations that might require several transactions to be executed simultaneously.
 
+## Installation & Usage
+
+```bash
+npm install -g solidity-multicall
+```
+
+
+See [test file](https://github.com/bh2smith/solidity-multi-transaction/blob/master/test/test_multi.js) for example usage
 
 ## Practical use case
 
