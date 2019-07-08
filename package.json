@@ -30,12 +30,12 @@
   },
   "homepage": "https://github.com/bh2smith/solidity-multi-transaction#readme",
   "dependencies": {
-    "truffle": "^5.0.25"
   },
   "devDependencies": {
     "coveralls": "^3.0.4",
     "solhint": "^2.1.0",
     "solidity-coverage": "^0.5.11",
+    "truffle": "^5.0.25",
     "truffle-assertions": "^0.9.1"
   }
 }
