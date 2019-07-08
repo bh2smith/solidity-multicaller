@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "truffle test",
-    "lint": "./node_modules/.bin/eslint ."
+    "lint": "./node_modules/.bin/eslint .",
+    "solhint": "solhint \"contracts/**/*.sol\"",
+    "coverage": "./node_modules/.bin/solidity-coverage"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,8 @@
     "truffle": "^5.0.25"
   },
   "devDependencies": {
+    "solhint": "^2.1.0",
+    "solidity-coverage": "^0.5.11",
     "truffle-assertions": "^0.9.1"
   }
 }

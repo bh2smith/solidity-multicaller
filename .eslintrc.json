@@ -1,0 +1,40 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "mocha": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ]
+    },
+    "globals": {
+        "require": true,
+        "assert": true,
+        "contract": true,
+        "artifacts": true,
+        "web3": true
+
+    }
+}
