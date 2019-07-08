@@ -9,4 +9,3 @@ script:
   - npm run lint
   - npm run solhint
   - npm run test
-  - npm run coverage
