@@ -7,7 +7,8 @@ before_install:
 before_script:
   - ganache-cli > /dev/null &
 script:
+  - set -e
+  - npm run coverage
   - npm run lint
   - npm run solhint
   - npm run test
-  - ./node_modules/.bin/solidity-coverage && cat ./coverage/lcov.info | coveralls
