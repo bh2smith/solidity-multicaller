@@ -7,9 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "truffle test",
     "lint": "./node_modules/.bin/eslint .",
-    "solhint": "solhint \"contracts/**/*.sol\""
+    "solhint": "solhint \"contracts/**/*.sol\"",
+    "test": "truffle test",
+    "coverage": "./node_modules/.bin/solidity-coverage"
   },
   "repository": {
     "type": "git",
@@ -29,11 +30,12 @@
     "url": "https://github.com/bh2smith/solidity-multi-transaction/issues"
   },
   "homepage": "https://github.com/bh2smith/solidity-multi-transaction#readme",
-  "dependencies": {
-    "truffle": "^5.0.25"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "coveralls": "^3.0.4",
     "solhint": "^2.1.0",
+    "solidity-coverage": "^0.5.11",
+    "truffle": "5.0.5",
     "truffle-assertions": "^0.9.1"
   }
 }
