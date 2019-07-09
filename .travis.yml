@@ -2,13 +2,11 @@ language: node_js
 node_js:
   - '8'
 before_install:
-  - npm install -g truffle
   - npm install -g ganache-cli
 before_script:
   - ganache-cli > /dev/null &
 script:
-  - set -e
-  - npm run coverage
   - npm run lint
   - npm run solhint
   - npm run test
+  - npm run coverage && cat ./coverage/lcov.info | coveralls
