@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - '8'
 before_install:
+  - npm install -g truffle
   - npm install -g ganache-cli
 before_script:
   - ganache-cli > /dev/null &
