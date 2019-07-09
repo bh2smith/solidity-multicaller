@@ -30,8 +30,7 @@
     "url": "https://github.com/bh2smith/solidity-multi-transaction/issues"
   },
   "homepage": "https://github.com/bh2smith/solidity-multi-transaction#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "coveralls": "^3.0.4",
     "solhint": "^2.1.0",
